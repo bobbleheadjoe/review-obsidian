@@ -1,3 +1,11 @@
+> **This is a maintained fork** of [ryanjamurphy/review-obsidian](https://github.com/ryanjamurphy/review-obsidian), kept by Mike Schmitz ([Practical PKM](https://practicalpkm.com)).
+>
+> **Why it exists:** Obsidian 1.15 ships `Plugin`, `Modal` and `PluginSettingTab` as native JavaScript classes. Review 1.6.6 was compiled to ES5, so it fails to load with a `Class constructor … cannot be invoked without 'new'` error. Version **1.6.7** of this fork is the same plugin, rebuilt with esbuild targeting ES2018 so the classes stay native. Nothing else about how it works has changed, and it keeps the plugin id `review-obsidian`, so your existing settings carry over.
+>
+> **Install with [BRAT](https://github.com/TfTHacker/obsidian42-brat):** Add beta plugin → `bobbleheadjoe/review-obsidian`.
+>
+> **Build:** `npm install && npm run build` produces `main.js`. Release assets are `main.js` and `manifest.json`.
+
 ## Review
 
 A plugin for [Obsidian](https://obsidian.md).

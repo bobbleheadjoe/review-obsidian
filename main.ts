@@ -29,7 +29,7 @@ export default class Review extends Plugin {
 	settings: IReviewSettings;
 
 	async onload() {
-		console.log('Loading the Review plugin v1.6.5.');
+		console.log('Loading the Review plugin v' + this.manifest.version + '.');
 
 		this.settings = Object.assign({}, DEFAULT_SETTINGS, (await this.loadData()))
 
